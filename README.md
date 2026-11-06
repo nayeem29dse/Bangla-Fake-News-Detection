@@ -15,7 +15,7 @@ Raw `content` text was heavily noisy — initial tokenization surfaced phone num
 - Strip HTML tags, URLs, and email addresses,
 - Remove digit sequences (Bangla and Latin numerals),
 - Remove CSS/markup leftovers,
-- Keep only Bangla Unicode characters (U+0980–U+09FF) and whitespace
+- Keep only Bangla Unicode characters (U+0980–U+09FF) and whitespace.
 
 Only 6 rows became empty after cleaning and were dropped.
 
