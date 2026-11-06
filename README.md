@@ -4,7 +4,7 @@
 An educational project exploring fake news detection in Bangla text using Multinomial Naive Bayes, trained on the **BanFakeNews** dataset (Kaggle, ~50K articles). Beyond building a classifier, the project investigates *why* certain techniques help or don't — specifically, how document length affects the influence of class priors, and how imbalance-handling techniques interact with Naive Bayes' underlying math.
 
 ## Dataset
-- **Source:** BanFakeNews (Kaggle)
+- **Source:** BanFakeNews (Kaggle).
 - **Files used:** `Authentic-48K.csv` + `Fake-1K.csv`, concatenated into a single working set (49,977 articles)
 - **Columns:** `articleID`, `domain`, `date`, `category`, `headline`, `content`, `label` (1 = authentic, 0 = fake)
 - **Class distribution:** 97.4% authentic vs 2.6% fake — a severe imbalance. A model that always predicts "authentic" would already score 97.4% accuracy while being useless, which motivated the imbalance-handling experiments below.
