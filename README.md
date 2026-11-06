@@ -6,7 +6,7 @@ An educational project exploring fake news detection in Bangla text using Multin
 ## Dataset
 - **Source:** BanFakeNews (Kaggle).
 - **Files used:** `Authentic-48K.csv` + `Fake-1K.csv`, concatenated into a single working set (49,977 articles).
-- **Columns:** `articleID`, `domain`, `date`, `category`, `headline`, `content`, `label` (1 = authentic, 0 = fake)
+- **Columns:** `articleID`, `domain`, `date`, `category`, `headline`, `content`, `label` (1 = authentic, 0 = fake).
 - **Class distribution:** 97.4% authentic vs 2.6% fake — a severe imbalance. A model that always predicts "authentic" would already score 97.4% accuracy while being useless, which motivated the imbalance-handling experiments below.
 - **Note:** the dataset also ships `LabeledAuthentic-7K.csv` and `LabeledFake-1K.csv` (a fact-checking-annotated subset with extra columns like `source`/`relation`/`F-type`). These were investigated but **not used** for training — see "Not yet done" below.
 
