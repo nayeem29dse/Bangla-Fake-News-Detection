@@ -14,7 +14,7 @@ An educational project exploring fake news detection in Bangla text using Multin
 Raw `content` text was heavily noisy — initial tokenization surfaced phone numbers, IDs, and leftover HTML/CSS fragments (e.g. `0px`) as top vocabulary tokens. A custom `clean_text()` function was built to:
 - Strip HTML tags, URLs, and email addresses,
 - Remove digit sequences (Bangla and Latin numerals),
-- Remove CSS/markup leftovers
+- Remove CSS/markup leftovers,
 - Keep only Bangla Unicode characters (U+0980–U+09FF) and whitespace
 
 Only 6 rows became empty after cleaning and were dropped.
